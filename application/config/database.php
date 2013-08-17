@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'GEO-LAPTOP\SQLEXPRESS';
+$db['default']['hostname'] = 'GEO-LAPTOP';
 $db['default']['username'] = 'sa';
 $db['default']['password'] = '1qaz@WSX3edc';
 $db['default']['database'] = 'sistema';

@@ -1,1 +1,1 @@
-Hi, <strong><?php echo $username; ?></strong>! You are logged in now. 
+Bienvenido a la Edici&oacute;n de Catalogos

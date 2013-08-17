@@ -46,7 +46,12 @@
         //adding load class to body and hide page
         document.documentElement.className += 'loadstate';
     </script>
-
+    
+    <!-- Important plugins put in all pages -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>
     </head>
 
     <body>
@@ -243,11 +248,7 @@
     
     <!-- Le javascript
     ================================================== -->
-    <!-- Important plugins put in all pages -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>
+    
 
     <!-- Charts plugins -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.js"></script>
