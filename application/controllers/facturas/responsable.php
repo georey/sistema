@@ -5,6 +5,7 @@ class Responsable extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->model('facturas_model');
 	}
 
 	function index()
@@ -12,7 +13,18 @@ class Responsable extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {			
-			$this->_cargarvista();
+			$data['facturas']=$this->facturas_model->cargar_facturas_estado(1);
+			$this->_cargarvista($data);
+		}
+	}
+
+	function regresar($id)
+	{
+		if (!$this->tank_auth->is_logged_in()) {
+			redirect('/auth/login/');
+		} else {			
+			$this->facturas_model->estado_factura($id ,6);
+			redirect('/facturas/responsable/');
 		}
 	}
 

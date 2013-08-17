@@ -13,7 +13,7 @@ class Lista extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
-			$data['facturas']=$this->facturas_model->cargar_tabla('vw_lista');
+			$data['facturas']=$this->facturas_model->cargar_facturas();
 			$this->_cargarvista($data);
 		}
 	}
@@ -23,8 +23,9 @@ class Lista extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
-			$resultado=$this->facturas_model->enlazar_factura($id);
-			$this->facturas_model->estado_factura($resultado,1);
+			$fac_id=$this->facturas_model->enlazar_factura($id);			
+			if($fac_id!=0)
+			$this->facturas_model->estado_factura($fac_id ,1);
 			redirect('/facturas/lista/');
 		}
 	}
