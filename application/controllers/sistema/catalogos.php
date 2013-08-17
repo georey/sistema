@@ -42,6 +42,12 @@ class Catalogos extends CI_Controller
         }
     }
 
+    public function load_editar()
+    {
+        $id = $this->input->get('id');
+        print_r($id); exit();
+    }
+
     /**
      * Carga vista 
      * 
