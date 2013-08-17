@@ -502,3 +502,486 @@ DEBUG - 2013-08-16 21:14:30 --> File loaded: application/views/welcome.php
 DEBUG - 2013-08-16 21:14:30 --> File loaded: application/views/masterpage_default.php
 DEBUG - 2013-08-16 21:14:30 --> Final output sent to browser
 DEBUG - 2013-08-16 21:14:30 --> Total execution time: 0.4020
+DEBUG - 2013-08-16 21:22:48 --> Config Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:22:48 --> URI Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Router Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> No URI present. Default controller set.
+DEBUG - 2013-08-16 21:22:48 --> Output Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Security Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Input Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:22:48 --> Language Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:22:48 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:22:48 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:22:48 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:22:48 --> Session Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:22:48 --> Session routines successfully run
+DEBUG - 2013-08-16 21:22:48 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Model Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Model Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:22:48 --> File loaded: application/views/welcome.php
+DEBUG - 2013-08-16 21:22:48 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:22:48 --> Final output sent to browser
+DEBUG - 2013-08-16 21:22:49 --> Total execution time: 0.8030
+DEBUG - 2013-08-16 21:23:51 --> Config Class Initialized
+DEBUG - 2013-08-16 21:23:51 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:23:51 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:23:51 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:23:51 --> URI Class Initialized
+DEBUG - 2013-08-16 21:23:51 --> Router Class Initialized
+ERROR - 2013-08-16 21:23:51 --> 404 Page Not Found --> facturas
+DEBUG - 2013-08-16 21:23:55 --> Config Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:23:55 --> URI Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Router Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Output Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Security Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Input Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:23:55 --> Language Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:23:55 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:23:55 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:23:55 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:23:55 --> Session Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:23:55 --> Session routines successfully run
+DEBUG - 2013-08-16 21:23:55 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Model Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Model Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:23:55 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:23:56 --> File loaded: application/views/sistema/index/index.php
+DEBUG - 2013-08-16 21:23:56 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:23:56 --> Final output sent to browser
+DEBUG - 2013-08-16 21:23:56 --> Total execution time: 0.5380
+DEBUG - 2013-08-16 21:23:56 --> Config Class Initialized
+DEBUG - 2013-08-16 21:23:56 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:23:56 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:23:56 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:23:56 --> URI Class Initialized
+DEBUG - 2013-08-16 21:23:56 --> Router Class Initialized
+ERROR - 2013-08-16 21:23:56 --> 404 Page Not Found --> media
+DEBUG - 2013-08-16 21:24:01 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:01 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Router Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Output Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Security Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Input Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:24:01 --> Language Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:24:01 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:24:01 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:24:01 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:24:01 --> Session Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:24:01 --> Session routines successfully run
+DEBUG - 2013-08-16 21:24:01 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:24:01 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:24:01 --> File loaded: application/views/sistema/index/index.php
+DEBUG - 2013-08-16 21:24:01 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:24:01 --> Final output sent to browser
+DEBUG - 2013-08-16 21:24:01 --> Total execution time: 0.3900
+DEBUG - 2013-08-16 21:24:02 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:02 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:02 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:02 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:02 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:02 --> Router Class Initialized
+ERROR - 2013-08-16 21:24:02 --> 404 Page Not Found --> media
+DEBUG - 2013-08-16 21:24:05 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:05 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Router Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Output Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Security Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Input Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:24:05 --> Language Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:24:05 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:24:05 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:24:05 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:24:05 --> Session Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:24:05 --> Session routines successfully run
+DEBUG - 2013-08-16 21:24:05 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:24:05 --> File loaded: application/views/welcome.php
+DEBUG - 2013-08-16 21:24:05 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:24:05 --> Final output sent to browser
+DEBUG - 2013-08-16 21:24:05 --> Total execution time: 0.3400
+DEBUG - 2013-08-16 21:24:41 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:41 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:41 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:41 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:41 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:41 --> Router Class Initialized
+ERROR - 2013-08-16 21:24:41 --> 404 Page Not Found --> facturas
+DEBUG - 2013-08-16 21:24:50 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:50 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Router Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Output Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Security Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Input Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:24:50 --> Language Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:24:50 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:24:50 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:24:50 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:24:50 --> Session Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:24:50 --> Session routines successfully run
+DEBUG - 2013-08-16 21:24:50 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Model Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:24:50 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:24:50 --> File loaded: application/views/sistema/index/index.php
+DEBUG - 2013-08-16 21:24:50 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:24:50 --> Final output sent to browser
+DEBUG - 2013-08-16 21:24:50 --> Total execution time: 0.3740
+DEBUG - 2013-08-16 21:24:51 --> Config Class Initialized
+DEBUG - 2013-08-16 21:24:51 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:24:51 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:24:51 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:24:51 --> URI Class Initialized
+DEBUG - 2013-08-16 21:24:51 --> Router Class Initialized
+ERROR - 2013-08-16 21:24:51 --> 404 Page Not Found --> media
+DEBUG - 2013-08-16 21:30:45 --> Config Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:30:45 --> URI Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Router Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Output Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Security Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Input Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:30:45 --> Language Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:30:45 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:30:45 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:30:45 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:30:45 --> Session Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:30:45 --> Session routines successfully run
+DEBUG - 2013-08-16 21:30:45 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Model Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Model Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:30:45 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:30:46 --> File loaded: application/views/welcome.php
+DEBUG - 2013-08-16 21:30:46 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:30:46 --> Final output sent to browser
+DEBUG - 2013-08-16 21:30:46 --> Total execution time: 0.8600
+DEBUG - 2013-08-16 21:30:48 --> Config Class Initialized
+DEBUG - 2013-08-16 21:30:48 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:30:48 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:30:48 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:30:48 --> URI Class Initialized
+DEBUG - 2013-08-16 21:30:48 --> Router Class Initialized
+ERROR - 2013-08-16 21:30:48 --> 404 Page Not Found --> facturas
+DEBUG - 2013-08-16 21:30:59 --> Config Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:30:59 --> URI Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Router Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Output Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Security Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Input Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:30:59 --> Language Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:30:59 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:30:59 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:30:59 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:30:59 --> Session Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:30:59 --> Session routines successfully run
+DEBUG - 2013-08-16 21:30:59 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Model Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Model Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:30:59 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:32:22 --> Config Class Initialized
+DEBUG - 2013-08-16 21:32:22 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:32:22 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:32:22 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:32:22 --> URI Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Router Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Output Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Security Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Input Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:32:23 --> Language Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:32:23 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:32:23 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:32:23 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:32:23 --> Session Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:32:23 --> Session routines successfully run
+DEBUG - 2013-08-16 21:32:23 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Model Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Model Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:32:23 --> File loaded: application/views/facturas/index/index.php
+DEBUG - 2013-08-16 21:32:23 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:32:23 --> Final output sent to browser
+DEBUG - 2013-08-16 21:32:23 --> Total execution time: 0.4360
+DEBUG - 2013-08-16 21:32:23 --> Config Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:32:23 --> URI Class Initialized
+DEBUG - 2013-08-16 21:32:23 --> Router Class Initialized
+ERROR - 2013-08-16 21:32:23 --> 404 Page Not Found --> media
+DEBUG - 2013-08-16 21:32:38 --> Config Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:32:38 --> URI Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Router Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Output Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Security Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Input Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:32:38 --> Language Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:32:38 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:32:38 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:32:38 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:32:38 --> Session Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:32:38 --> Session routines successfully run
+DEBUG - 2013-08-16 21:32:38 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Model Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Model Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:32:38 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:32:38 --> File loaded: application/views/facturas/index/index.php
+DEBUG - 2013-08-16 21:32:38 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:32:38 --> Final output sent to browser
+DEBUG - 2013-08-16 21:32:38 --> Total execution time: 0.4110
+DEBUG - 2013-08-16 21:32:39 --> Config Class Initialized
+DEBUG - 2013-08-16 21:32:39 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:32:39 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:32:39 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:32:39 --> URI Class Initialized
+DEBUG - 2013-08-16 21:32:39 --> Router Class Initialized
+ERROR - 2013-08-16 21:32:39 --> 404 Page Not Found --> media
+DEBUG - 2013-08-16 21:35:03 --> Config Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:35:03 --> URI Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Router Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Output Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Security Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Input Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:35:03 --> Language Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:35:03 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:35:03 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:35:03 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:35:03 --> Session Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:35:03 --> Session routines successfully run
+DEBUG - 2013-08-16 21:35:03 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Model Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Model Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:35:03 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:35:03 --> File loaded: application/views/facturas/index/index.php
+DEBUG - 2013-08-16 21:35:03 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:35:03 --> Final output sent to browser
+DEBUG - 2013-08-16 21:35:03 --> Total execution time: 0.4320
+DEBUG - 2013-08-16 21:35:58 --> Config Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:35:58 --> URI Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Router Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Output Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Security Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Input Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:35:58 --> Language Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:35:58 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:35:58 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:35:58 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:35:58 --> Session Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:35:58 --> Session routines successfully run
+DEBUG - 2013-08-16 21:35:58 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Model Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Model Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:35:58 --> File loaded: application/views/welcome.php
+DEBUG - 2013-08-16 21:35:58 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:35:58 --> Final output sent to browser
+DEBUG - 2013-08-16 21:35:58 --> Total execution time: 0.4430
+DEBUG - 2013-08-16 21:36:01 --> Config Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:36:01 --> URI Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Router Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Output Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Security Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Input Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:36:01 --> Language Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:36:01 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:36:01 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:36:01 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:36:01 --> Session Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:36:01 --> Session routines successfully run
+DEBUG - 2013-08-16 21:36:01 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:36:01 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:36:01 --> File loaded: application/views/sistema/index/index.php
+DEBUG - 2013-08-16 21:36:01 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:36:01 --> Final output sent to browser
+DEBUG - 2013-08-16 21:36:01 --> Total execution time: 0.4210
+DEBUG - 2013-08-16 21:36:09 --> Config Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:36:09 --> URI Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Router Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Output Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Security Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Input Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:36:09 --> Language Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:36:09 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:36:09 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:36:09 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:36:09 --> Session Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:36:09 --> Session routines successfully run
+DEBUG - 2013-08-16 21:36:09 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:36:09 --> File loaded: application/views/welcome.php
+DEBUG - 2013-08-16 21:36:09 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:36:09 --> Final output sent to browser
+DEBUG - 2013-08-16 21:36:09 --> Total execution time: 0.3870
+DEBUG - 2013-08-16 21:36:11 --> Config Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:36:11 --> URI Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> Router Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> Output Class Initialized
+DEBUG - 2013-08-16 21:36:11 --> Security Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Input Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:36:12 --> Language Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:36:12 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:36:12 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:36:12 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:36:12 --> Session Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:36:12 --> Session routines successfully run
+DEBUG - 2013-08-16 21:36:12 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Model Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:36:12 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:36:12 --> File loaded: application/views/facturas/index/index.php
+DEBUG - 2013-08-16 21:36:12 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:36:12 --> Final output sent to browser
+DEBUG - 2013-08-16 21:36:12 --> Total execution time: 0.4330
+DEBUG - 2013-08-16 21:46:36 --> Config Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Hooks Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Utf8 Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> UTF-8 Support Enabled
+DEBUG - 2013-08-16 21:46:36 --> URI Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Router Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Output Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Security Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Input Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-08-16 21:46:36 --> Language Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Loader Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Helper loaded: form_helper
+DEBUG - 2013-08-16 21:46:36 --> Helper loaded: url_helper
+DEBUG - 2013-08-16 21:46:36 --> Helper loaded: util_helper
+DEBUG - 2013-08-16 21:46:36 --> Config file loaded: application/config/tank_auth.php
+DEBUG - 2013-08-16 21:46:36 --> Session Class Initialized
+DEBUG - 2013-08-16 21:46:36 --> Helper loaded: string_helper
+DEBUG - 2013-08-16 21:46:36 --> Session routines successfully run
+DEBUG - 2013-08-16 21:46:36 --> Database Driver Class Initialized
+DEBUG - 2013-08-16 21:46:37 --> Model Class Initialized
+DEBUG - 2013-08-16 21:46:37 --> Model Class Initialized
+DEBUG - 2013-08-16 21:46:37 --> Form Validation Class Initialized
+DEBUG - 2013-08-16 21:46:37 --> Controller Class Initialized
+DEBUG - 2013-08-16 21:46:37 --> File loaded: application/views/vacia.php
+DEBUG - 2013-08-16 21:46:37 --> File loaded: application/views/facturas/index/index.php
+DEBUG - 2013-08-16 21:46:37 --> File loaded: application/views/masterpage_default.php
+DEBUG - 2013-08-16 21:46:37 --> Final output sent to browser
+DEBUG - 2013-08-16 21:46:37 --> Total execution time: 1.1391

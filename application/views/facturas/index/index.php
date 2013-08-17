@@ -1,0 +1,1 @@
+<img src="<?php echo base_url().'media/index/factura.png'?>" style=" display: block;margin-left: auto;margin-right: auto">
