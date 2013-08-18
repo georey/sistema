@@ -22,7 +22,7 @@ class Lista extends CI_Controller
 	{
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
-		} else {
+		} else {			
 			$fac_id=$this->facturas_model->enlazar_factura($id);			
 			if($fac_id!=0)
 			$this->facturas_model->estado_factura($fac_id ,1);

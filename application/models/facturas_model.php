@@ -12,7 +12,6 @@ class Facturas_model extends CI_Model
 	public function enlazar_factura($id)
 	{
 		$res=$this->get_registro('fac_factura',array('fac_id_vista'=>$id));
-
 		if(count($res)==0) {
 			$res2=$this->add_registro('fac_factura',array('fac_id_vista'=>$id, 'fac_id_usu'=>$this->tank_auth->get_user_id()));
 			return $res2;
@@ -24,9 +23,10 @@ class Facturas_model extends CI_Model
 	}
 
 	public function estado_factura($id,$est)
-	{
-		$this->add_registro('esf_estado_factura',array('esf_id_fac'=>$id, 'esf_estado'=>$est, 'esf_id_usu'=>$this->tank_auth->get_user_id()));
-		$this->mod_registro('fac_factura', array('fac_estado'=>$est),'fac_id', $id);
+	{		
+		$estado=$this->add_registro('esf_estado_factura',array('esf_id_fac'=>$id, 'esf_estado'=>$est, 'esf_id_usu'=>$this->tank_auth->get_user_id()));
+		$factura=$this->mod_registro('fac_factura', array('fac_estado' => $est), 'fac_id', $id);
+		return 1;
 	}
 
 	public function cargar_facturas_estado($est)
@@ -41,7 +41,7 @@ class Facturas_model extends CI_Model
 
 	public function cargar_facturas()
 	{
-		$facturas=$this->get_tabla('fac_factura',array('fac_estado'=>6));
+		$facturas=$this->get_tabla('fac_factura',array('fac_estado <'=>6));
 		$facts = array();
 		foreach ($facturas as $key) {
 			$facts[]=$key['fac_id_vista'];
@@ -49,7 +49,7 @@ class Facturas_model extends CI_Model
 		$this->db->select()			
 			->from('vw_lista');
 			if(count($facts)>0)
-			$this->db->where_in('id',$facts);
+			$this->db->where_not_in('id',$facts);
 		$query=$this->db->get();
 		return $query->result_array();
 	}
@@ -61,10 +61,10 @@ class Facturas_model extends CI_Model
 	}
 
 	public function mod_registro($tabla,$cadena,$campo,$condicion)
-	{
-        $this->db->where($campo, $condicion);
-        $this->db->update($tabla, $cadena);
-        return $this->db->affected_rows();
+	{		
+		$this->db->where($campo, $condicion);
+        $this->db->update($tabla, $cadena);        
+        return 1;
     }
 
    public function del_registro($tabla,$campos)
