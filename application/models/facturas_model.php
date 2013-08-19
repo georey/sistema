@@ -29,12 +29,27 @@ class Facturas_model extends CI_Model
 		return 1;
 	}
 
+	public function historial($id)
+	{
+		$this->db->select()			
+			->from('fac_factura')
+			->join('esf_estado_factura','esf_id_fac=fac_id','left')
+			->join('est_estado','est_id=esf_estado','left')
+			->join('users','id=esf_id_usu','left')
+			->where_in('fac_id',$id);
+		$query=$this->db->get();
+		return $query->result_array();
+	}
+
 	public function cargar_facturas_estado($est)
 	{
 		$this->db->select()			
 			->from('fac_factura')
 			->join('vw_lista','id=fac_id_vista')
-			->where('fac_estado',$est);
+			->join('des_destino','des_id_fac=fac_id','left')
+			->join('asi_asignacion','asi_id=des_id_asi','left')
+			->join('res_responsable','res_id=asi_id_res','left')
+			->where_in('fac_estado',$est);
 			$query=$this->db->get();
 		return $query->result_array();
 	}

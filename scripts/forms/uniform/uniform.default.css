@@ -435,7 +435,7 @@ div.selector span {
 
 div.selector span {
   color: #666;
-  width: 158px;
+  width: 100%;
   text-shadow: 0 1px 0 #fff;
 }
 
