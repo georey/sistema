@@ -22,9 +22,9 @@ class Facturas_model extends CI_Model
 		}		
 	}
 
-	public function estado_factura($id,$est)
+	public function estado_factura($id,$est,$monto=0.0)
 	{		
-		$estado=$this->add_registro('esf_estado_factura',array('esf_id_fac'=>$id, 'esf_estado'=>$est, 'esf_id_usu'=>$this->tank_auth->get_user_id()));
+		$estado=$this->add_registro('esf_estado_factura',array('esf_id_fac'=>$id, 'esf_estado'=>$est, 'esf_id_usu'=>$this->tank_auth->get_user_id(),'esf_monto' => $monto));
 		$factura=$this->mod_registro('fac_factura', array('fac_estado' => $est), 'fac_id', $id);
 		return 1;
 	}
@@ -43,7 +43,7 @@ class Facturas_model extends CI_Model
 
 	public function cargar_facturas_estado($est)
 	{
-		$this->db->select()			
+		$this->db->select('*, (select sum(esf_monto) from esf_estado_factura where esf_id_fac=fac_id) as ingreso')			
 			->from('fac_factura')
 			->join('vw_lista','id=fac_id_vista')
 			->join('des_destino','des_id_fac=fac_id','left')

@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Recepcion extends CI_Controller
+class Quedan extends CI_Controller
 {
 	function __construct()
 	{
@@ -13,13 +13,26 @@ class Recepcion extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {			
-			$data['facturas']=$this->facturas_model->cargar_facturas_estado(array(2,3));
+			$data['facturas']=$this->facturas_model->cargar_facturas_estado(array(8,9));
 			$data['responsables']=$this->facturas_model->cargar_tabla('res_responsable');
 			if($_POST) {
-				$comp=$this->facturas_model->get_registro('asi_asignacion',array('asi_id_res' => $_POST['responsable'], 'asi_fecha_mod' => date('d/m/Y')));				
-				$asi_id = $comp['asi_id'];				
-				$this->facturas_model->estado_factura($_POST['fac_id'] ,3,$_POST['monto']);
-				redirect('/facturas/recepcion/');
+				$comp=$this->facturas_model->get_registro('asi_asignacion',array('asi_id_res' => $_POST['responsable'], 'asi_fecha_mod' => date('d/m/Y')));
+				if (count($comp)==0) {
+					$asignacion = array(
+						'asi_id_res' => $_POST['responsable'] ,
+						'asi_id_usu' => $this->tank_auth->get_user_id());
+					$asi_id = $this->facturas_model->add_registro('asi_asignacion',$asignacion);
+				}
+				else
+					$asi_id = $comp['asi_id'];
+
+				$responsable = array(
+					'des_id_asi' => $asi_id,
+					'des_id_fac' => $_POST['fac_id'],
+					'des_obs' => $_POST['obs'] );
+				$this->facturas_model->add_registro('des_destino',$responsable);
+				$this->facturas_model->estado_factura($_POST['fac_id'] ,9);
+				redirect('/facturas/responsable/');
 			}
 			else
 			$this->_cargarvista($data);
@@ -37,26 +50,7 @@ class Recepcion extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {			
-			$this->facturas_model->estado_factura($id ,1);
-			redirect('/facturas/responsable/');
-		}
-	}
-
-	function finalizar($id,$valor,$monto)
-	{
-		if (!$this->tank_auth->is_logged_in()) {
-			redirect('/auth/login/');
-		} else {
-			$diferencia=$valor-$monto;			
-			if ($diferencia==0) {
-				# factura saldada
-				$estado = 7;
-			}
-			if ($diferencia>0) {
-				# factura quedan
-				$estado = 8;
-			}
-			$this->facturas_model->estado_factura($id ,$estado);
+			$this->facturas_model->estado_factura($id ,6);
 			redirect('/facturas/responsable/');
 		}
 	}

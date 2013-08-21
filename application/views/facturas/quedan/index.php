@@ -46,7 +46,7 @@
 				<?php echo $key['ingreso']?>
 			</td>
 			<td>
-				<a data-toggle="modal" href="#asignar" data-id="<?php echo $key['fac_id'] ?>" onclick="javascript:$('#fac_id').attr('value',$(this).attr('data-id'))" title="Asignar monto"><span aria-hidden="true" class="icon16 icomoon-icon-coin"></span></a> | 
+				<a data-toggle="modal" href="#asignar" data-id="<?php echo $key['fac_id'] ?>" onclick="javascript:$('#fac_id').attr('value',$(this).attr('data-id'))" title="Asignar monto"><span aria-hidden="true" class="entypo-icon-document"></span></a> | 
 				<a href="<?php echo base_url()?>facturas/recepcion/regresar/<?php echo $key['fac_id'] ?>" title="Regresar a paso anterior"><span aria-hidden="true" class="iconic-icon-undo"></span></a> | 
 				<a data-toggle="modal" href="#historial" data-id="<?php echo $key['fac_id'] ?>" onclick="cargar_historial(<?php echo $key['fac_id'] ?>)" title="Ver historial"><span aria-hidden="true" class="minia-icon-calendar-2"></span></a> | 
 				<a href="<?php echo base_url()?>facturas/recepcion/finalizar/<?php echo $key['fac_id'].'/'.$key['valor'].'/'.$key['ingreso'] ?>" title="Finalizar"><span aria-hidden="true" class="minia-icon-checkmark"></span></a> | 
@@ -58,7 +58,7 @@
 <div class="modal fade hide" id="asignar">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
-        <h3>Asignar monto</h3>
+        <h3>Asignar quedan</h3>
     </div>
     <div class="modal-body">
     	<div class="box">            
@@ -67,8 +67,8 @@
                 	<div class="form-row row-fluid">
                         <div class="span12">
                             <div class="row-fluid">
-                                <label class="form-label span4" for="nombres">Monto</label>
-                                <input type="text" class="span8 text" id="monto" type="text" name="monto">
+                                <label class="form-label span4" for="nombres">quedan</label>
+                                <input type="text" class="span8 text" id="quedan" type="text" name="quedan">
                             </div>
                         </div>
                     </div>
