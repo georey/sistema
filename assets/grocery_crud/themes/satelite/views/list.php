@@ -43,49 +43,8 @@ $column_width = (int)(80/count($columns));
 			<?php if(!$unset_delete || !$unset_edit || !empty($actions) ||$texto){?>
 			<td align="left">
 				<div class='tools'>		
-                     
-                     	<?php if($texto){?>
-                    	
-                    			<?php 
-                    			//si el count==1 significa que es un string simple cargara el fancybox segun l evento on clik!
-                                $texto2= explode(',', $texto);
-
-                                if(count($texto2)==1){
-                                ?>
-                                <a class="validar tbutton" url="<?php echo base_url().$funcion;?>" valor="<?php echo $row->custom_f;?>" refreshh="<?php echo $url1;?>"  href='' title='Custom function' ><?php echo $texto2[0];?></a>
-                                <?php	
-                               	
-                                }
-                                if(count($texto2)>1){
-                                ?>
-                                <a class="validar tbutton" url="<?php echo base_url().$funcion;?>" valor="<?php echo $row->custom_f;?>" refreshh="<?php echo $url1;?>"  href='' title='Custom function' ><?php echo $texto2[1];?></a>
-                                <?php } ?>
-                    
-                    <?php }?>
-                   <?php if($texto1){?>
-                    	
-                    			<?php 
-                    			//si el count==1 significa que es un string simple cargara el fancybox segun l evento on clik!
-                                $texto3= explode(',', $texto1);
-
-                                if(count($texto3)==1){
-                                ?>
-                                <a class="validar tbutton" url="<?php echo base_url().$funcion1;?>" valor="<?php echo $row->custom_f;?>" refreshh="<?php echo $url1;?>"  href='' title='Custom function' ><?php echo $texto3[0];?></a>
-                                <?php	
-                               	
-                                }
-                                if(count($texto3)>1){
-                                ?>
-                                <a class="validar tbutton" url="<?php echo base_url().$funcion1;?>" valor="<?php echo $row->custom_f;?>" refreshh="<?php echo $url1;?>"  href='' title='Custom function' ><?php echo $texto3[1];?></a>
-                                <?php } ?>
-                    
-                    <?php }?>
-
-
-
-
 					<?php if(!$unset_delete){?>
-                    	<a href='<?php echo $row->delete_url?>' title='<?php echo $this->l('list_delete')?> <?php echo $subject?>'>
+                    	<a class='delete-row' href='<?php echo $row->delete_url?>' title='<?php echo $this->l('list_delete')?> <?php echo $subject?>'>
                     			<span class='icon16 icomoon-icon-remove'></span>
                     	</a>
                     <?php }?>
@@ -125,70 +84,6 @@ $column_width = (int)(80/count($columns));
                         </div><!-- End .span12 -->
 
                     </div><!-- End .row-fluid -->
-
-<?php 
-if(isset($texto2) && count($texto2)==1):?>
-<script>
-$('.validar').click(function(event) {
-         event.preventDefault();
-           url=  $(this).attr("url");
-         valor= $(this).attr("valor");
-        refresh=  $(this).attr("refreshh");
-		$.ajax({
-			  type: 'POST',
-			  url: url,
-			  data: {valor:valor},
-			  success: function(data){
-			//alert(url);
-			$.fancybox("<div style='color:black; background-color:white;'>"+data+"</div>");
-			   
-			 // refresh(refreshh);
-			  //alert(data);
-			 }
-			});
-        // Stop the Search input reloading the page by preventing its default action
-       
-    });
-   
-</script>
-<?php endif; ?>
-
-<?php if(isset($texto2) && count($texto2)>1):?>
-	<?php if($texto2[0]=="1"):?>
-<script>
-$('.validar').mouseover(function(event){
-         event.preventDefault();
-           url=  $(this).attr("url");
-         valor= $(this).attr("valor");
-        refresh=  $(this).attr("refreshh");
-		$.ajax({
-			  type: 'POST',
-			  url: url,
-			  data: {valor:valor},
-			  success: function(data){
-			//alert(url);
-			$.fancybox("<div style='color:black; background-color:white;'>"+data+"</div>");
-			   
-			 // refresh(refreshh);
-			  //alert(data);
-			 }
-			});
-        // Stop the Search input reloading the page by preventing its default action
-       
-    });
-
-   
-</script>
-<?php endif; ?>
-<?php endif; ?>
-
-
-
-
-
-
-
-
 
 <script>
 function refresh(refreshh){

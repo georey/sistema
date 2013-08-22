@@ -1,20 +1,13 @@
 $(function(){
 	
 	var call_fancybox = function(){
-		$('.image-thumbnail').fancybox({
-			'transitionIn'	:	'elastic',
-			'transitionOut'	:	'elastic',
-			'speedIn'		:	600, 
-			'speedOut'		:	200, 
-			'overlayShow'	:	false
-		});		
+		$('.image-thumbnail').modal({ show: false});
 	};
 	
 	call_fancybox();
 	
 	$('.delete-row').live('click', function(){
-		var delete_url = $(this).attr('href');
-		
+		var delete_url = $(this).attr('href');		
 		if( confirm( message_alert_delete ) )
 		{
 			$.ajax({
@@ -47,11 +40,15 @@ $(function(){
 						$('#report-success').html('').slideUp('fast');						
 						
 					}
+					location.reload();
 				}
 			});
 		}
+
+
 		
 		return false;
+
 	});
 	
 	$('.export-anchor').click(function(){

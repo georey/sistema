@@ -1,9 +1,9 @@
 <?php
 	//$this->set_css($this->default_theme_path.'/satelite/css/flexigrid.css');
 	//$this->set_js($this->default_theme_path.'/satelite/js/flexigrid.js');
-	//$this->set_js($this->default_theme_path.'/satelite/js/jquery.form.js');
-	//$this->set_js("scripts/tables/responsive-tables/responsive-tables.js");
+	//$this->set_js($this->default_theme_path.'/satelite/js/jquery.form.js');	
 ?>
+
 <script type='text/javascript'>
 	var base_url = '<?php echo base_url();?>';
 
@@ -12,6 +12,7 @@
 	var unique_hash = '<?php echo $unique_hash; ?>';
 
 	var message_alert_delete = "<?php echo $this->l('alert_delete'); ?>";
+	
 
 </script>
 <div id="hidden-operations"></div>

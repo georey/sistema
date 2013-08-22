@@ -5,7 +5,7 @@ class Acceso extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->library('grocery_CRUD');
+		//$this->load->library('grocery_CRUD');
 	}
 
 	function index()
@@ -24,14 +24,14 @@ class Acceso extends CI_Controller
 		} else {
 			try
 			{
-				
-				$crud = new grocery_CRUD();
+
+				$crud = $this->new_crud();
 				$crud->set_table('rol_rol');
 				$crud->set_subject('Roles');
 				$crud->columns('rol_nombre','rol_descripcion');
 				$output = $crud->render();
-				//$this->_cargarvista(null,$output);
-				$this->load->view('sistema/acceso/roles',$output);
+				$this->_cargarvista(null,$output);
+				//$this->load->view('sistema/acceso/roles',$output);
 			}
 			catch(Exception $e)
 			{
@@ -77,7 +77,7 @@ class Acceso extends CI_Controller
 		} else {
 			try
 			{
-				$crud = new grocery_CRUD();
+				$crud = $this->new_crud();
 				$crud->set_table('users');
 				$crud->set_subject('Usuarios');
 				$crud->columns('username','email','activated','rol');
@@ -104,6 +104,22 @@ class Acceso extends CI_Controller
 			
 		}
 	}
+
+	public function new_crud(){
+        $db_driver = $this->db->platform();
+        $model_name = 'grocery_crud_model_'.$db_driver;
+        $model_alias = 'm'.substr(md5(rand()), 0, rand(4,15) );
+        unset($this->{$model_name});
+        $this->load->library('grocery_CRUD');
+        $crud = new Grocery_CRUD();
+        if (file_exists(APPPATH.'/models/'.$model_name.'.php')){
+            //$this->load->model('grocery_crud_model');
+            $this->load->model('grocery_crud_generic_model');
+            $this->load->model($model_name,$model_alias);
+            $crud->basic_model = $this->{$model_alias};
+        }
+        return $crud;
+    }
 
 	function _cargarvista($data=0,$crud=0)
 	{	
