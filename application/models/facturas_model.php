@@ -29,6 +29,20 @@ class Facturas_model extends CI_Model
 		return 1;
 	}
 
+	public function recorrido($id)
+	{
+		$this->db->select()			
+			->from('des_destino')
+			->join('asi_asignacion','asi_id=des_id_asi','left')
+			->join('fac_factura','fac_id=des_id_fac','left')
+			->join('vw_lista','id=fac_id_vista','left')
+			->where('asi_id_res',$id)
+			->where('asi_fecha >= convert(datetime,'.date('d/m/y').')')
+			->where('asi_fehcha <= convert(datetime,'.date('d/m/y', strtotime("+1 day")).')');
+		$query=$this->db->get();
+		return $query->result_array();
+	}
+
 	public function historial($id)
 	{
 		$this->db->select()			
