@@ -13,9 +13,15 @@ class Carga extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
-			$data['usuarios']=$this->facturas_model->get_tabla('res_responsable',array('res_estado'=>1));
+			$data['responsables']=$this->facturas_model->get_tabla('res_responsable',array('res_estado'=>1));
 			$this->_cargarvista($data);
 		}
+	}
+
+	function recorrido()
+	{
+		$data['recorrido']=$this->facturas_model->recorrido($_POST['id']);
+		$this->load->view('facturas/carga/recorrido',$data);
 	}
 
 	function _cargarvista($data=0,$crud=0)
