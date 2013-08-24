@@ -37,9 +37,14 @@ class Catalogo extends CI_Controller {
         try{
             $crud = $this->new_crud();
 
-            $crud->set_theme('twitter-bootstrap');
-            $crud->set_table('res_responsable');
-            $crud->set_subject('Responsable');
+            $crud->set_table('res_responsable')
+            ->set_subject('Responsable')
+            ->columns('res_nombre', 'res_apellido', 'res_documento', 'res_telefono')
+            ->fields('res_nombre', 'res_apellido', 'res_documento', 'res_telefono')
+            ->display_as('res_nombre', 'Nombre')
+            ->display_as('res_apellido', 'Apellido')
+            ->display_as('res_documento', 'D.U.I')
+            ->display_as('res_telefono', 'Tel&eacute;fono');
 
             $output = $crud->render();
 
