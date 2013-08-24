@@ -250,6 +250,11 @@
     ================================================== -->
     
 
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>    
+
     <!-- Charts plugins -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.grow.js"></script>
@@ -264,6 +269,7 @@
     <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/select/select2.min.js"></script>
     <!-- Search plugin -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_set.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
@@ -272,6 +278,7 @@
     <!-- Form plugins -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/watermark/jquery.watermark.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/uniform/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/tiny_mce/jquery.tinymce.js"></script>
     
     <!-- Fix plugins -->
     <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/ios-fix/ios-orientationchange-fix.js"></script>
@@ -281,13 +288,22 @@
     <script type="text/javascript" src="<?php echo base_url()?>scripts/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
 
     <!-- Important Place before main.js  -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/supr-theme/jquery-ui-timepicker-addon.js"></script>
+
+    <!-- grocery crud plugins  --> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/flexigrid.js"></script> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/jquery.form.js"></script>
+
+    
 
     <!-- Init plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->    
     <script type="text/javascript" src="<?php echo base_url()?>js/dashboard.js"></script><!-- Init plugins only for page -->
     <script type="text/javascript" src="<?php echo base_url()?>js/datatable.js"></script><!-- Init plugins only for page -->
+    
+    
 
     </body>
 </html>
