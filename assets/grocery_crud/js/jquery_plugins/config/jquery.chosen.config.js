@@ -1,3 +1,3 @@
 $(function(){
-	$(".chosen-select,.chosen-multiple-select").select2();	
+	//$(".chosen-select,.chosen-multiple-select").select2();	
 });

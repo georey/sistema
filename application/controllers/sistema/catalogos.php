@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Catalogo extends CI_Controller {
+class Catalogos extends CI_Controller {
 
     public function __construct()
     {
@@ -34,6 +34,11 @@ class Catalogo extends CI_Controller {
 
     public function index()
     {
+        
+    }
+
+    public function responsables()
+    {
         try{
             $crud = $this->new_crud();
 
@@ -45,6 +50,25 @@ class Catalogo extends CI_Controller {
             ->display_as('res_apellido', 'Apellido')
             ->display_as('res_documento', 'D.U.I')
             ->display_as('res_telefono', 'Tel&eacute;fono');
+
+            $output = $crud->render();
+
+            $this->_cargarvista(null,$output);
+
+        }catch(Exception $e){
+            show_error($e->getMessage().' --- '.$e->getTraceAsString());
+        }
+    }
+
+     public function estados()
+    {
+        try{
+            $crud = $this->new_crud();
+
+            $crud->set_theme('twitter-bootstrap')
+            ->set_table('esf_estado_factura')
+            ->set_subject('Estado Factura')
+            ->set_relation('esf_estado', 'esf_estado_factura', 'esf_id_fac');
 
             $output = $crud->render();
 
