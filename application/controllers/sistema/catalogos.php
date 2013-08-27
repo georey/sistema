@@ -64,9 +64,7 @@ class Catalogos extends CI_Controller {
     {
         try{
             $crud = $this->new_crud();
-
-            $crud->set_theme('twitter-bootstrap')
-            ->set_table('esf_estado_factura')
+            $crud->set_table('esf_estado_factura')
             ->set_subject('Estado Factura')
             ->set_relation('esf_estado', 'esf_estado_factura', 'esf_id_fac');
 

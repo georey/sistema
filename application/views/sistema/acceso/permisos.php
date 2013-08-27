@@ -1,7 +1,7 @@
 <script>
  $(document).ready(function () {
-        $("#rol").select2();
-        $("#opc").select2();
+        //$("#rol").select2();
+        //$("#opc").select2();
         cargarOpciones();
     });
 

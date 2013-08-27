@@ -8,8 +8,6 @@
     <meta name="keywords" content="admin, admin template, admin theme, responsive, responsive admin, responsive admin template, responsive theme, themeforest, 960 grid system, grid, grid theme, liquid, masonry, jquery, administration, administration template, administration theme, mobile, touch , responsive layout, boostrap, twitter boostrap" />
     <meta name="application-name" content="Supr admin template" />
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Core stylesheets do not remove -->
     <link href="<?php echo base_url()?>stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url()?>stylesheets/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
@@ -20,9 +18,14 @@
     <link href="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url()?>scripts/misc/search/tipuesearch.css" type="text/css" rel="stylesheet" />
-     <link href="<?php echo base_url()?>scripts/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
 
+    <link href="<?php echo base_url()?>scripts/forms/inputlimiter/jquery.inputlimiter.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/forms/ibutton/jquery.ibutton.css" type="text/css" rel="stylesheet" />
     <link href="<?php echo base_url()?>scripts/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/forms/color-picker/color-picker.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/forms/select/select2.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/forms/validate/validate.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/forms/smartWizzard/smart_wizard.css" type="text/css" rel="stylesheet" />
 
     <!-- Main stylesheets -->
     <link href="<?php echo base_url()?>stylesheets/main.css" rel="stylesheet" type="text/css" /> 
@@ -35,6 +38,9 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+
+
+
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="<?php echo base_url()?>media/images/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url()?>media/images/apple-touch-icon-144-precomposed.png" />
@@ -46,12 +52,56 @@
         //adding load class to body and hide page
         document.documentElement.className += 'loadstate';
     </script>
-    
-    <!-- Important plugins put in all pages -->
+        <!-- Important plugins put in all pages -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
     <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>  
+
+
+       <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/knob/jquery.knob.js"></script><!-- Circular sliders and stats -->
+
+    <!-- Misc scripts -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
+    
+    <!-- Search plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch.js"></script>
+    
+    <!-- Form plugins -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/watermark/jquery.watermark.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/elastic/jquery.elastic.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/inputlimiter/jquery.inputlimiter.1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/maskedinput/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/ibutton/jquery.ibutton.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/uniform/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/stepper/ui.stepper.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/color-picker/colorpicker.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/timeentry/jquery.timeentry.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/select/select2.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/dualselect/jquery.dualListBox-1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/tiny_mce/jquery.tinymce.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/smartWizzard/jquery.smartWizard-2.0.min.js"></script>
+    
+    <!-- Fix scripts -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/ios-fix/ios-orientationchange-fix.js"></script>
+
+    <!-- Important Place before main.js  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
+
+    <!-- grocery crud scripts  --> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/flexigrid.js"></script> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/jquery.form.js"></script>
+
+    <!-- Init plugins -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/dashboard.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/forms.js"></script><!-- Init plugins only for page -->
     </head>
 
     <body>
@@ -170,7 +220,7 @@
             <div class="sidenav">
 
                 <div class="sidebar-widget" style="margin: -1px 0 0 0;">
-                    <h5 class="title" style="margin-bottom:0">Navegacion</h5>
+                    <h5 class="title" style="margin-bottom:0">- Control de navegacion -</h5>
                 </div><!-- End .sidenav-widget -->
 
                 <div class="mainnav">
@@ -215,7 +265,7 @@
                                         }
                                     }
                                 ?>
-                    </ul>
+                    </ul>                     
                 </div>
             </div><!-- End sidenav -->
         </div><!-- End #sidebar -->
@@ -224,7 +274,7 @@
         <div id="content" class="clearfix">
             <div class="contentwrapper"><!--Content wrapper-->
                 <div class="heading">
-                    <h3><?php print_r($descripcion)?></h3>
+                    <h3><?php print_r(strtoupper($funcion))?></h3>
                     <ul class="breadcrumb">
                         <li>Ud se encuentra aqui:</li>
                         <li>
@@ -246,62 +296,13 @@
         </div><!-- End #content -->
     </div><!-- End #wrapper -->
     
-    <!-- Le javascript
-    ================================================== -->
-    
 
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>    
-
-    <!-- Charts plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.grow.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.pie.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.resize.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.tooltip_0.4.4.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/flot/jquery.flot.orderBars.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/knob/jquery.knob.js"></script><!-- Circular sliders and stats -->
-
-    <!-- Misc plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/select/select2.min.js"></script>
-    <!-- Search plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch.js"></script>
-
-    <!-- Form plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/watermark/jquery.watermark.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/uniform/jquery.uniform.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/tiny_mce/jquery.tinymce.js"></script>
-    
-    <!-- Fix plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/ios-fix/ios-orientationchange-fix.js"></script>
-
-    <!-- Table plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/tables/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
-
-    <!-- Important Place before main.js  -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/supr-theme/jquery-ui-timepicker-addon.js"></script>
-
-    <!-- grocery crud plugins  --> 
-    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/flexigrid.js"></script> 
-    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/jquery.form.js"></script>
 
     
 
-    <!-- Init plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->    
-    <script type="text/javascript" src="<?php echo base_url()?>js/dashboard.js"></script><!-- Init plugins only for page -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/datatable.js"></script><!-- Init plugins only for page -->
+    
+
+
     
     
 

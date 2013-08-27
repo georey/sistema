@@ -89,7 +89,7 @@ class Acceso extends CI_Controller
                     ->display_as('username','Nombre de Usuario')
                 ;
                 
-                $crud->set_relation_n_n('rol','uxr_usuarioxrol','rol_rol','uxr_id_usu','uxr_id_rol','rol_nombre');
+                //$crud->set_relation_n_n('rol','uxr_usuarioxrol','rol_rol','uxr_id_usu','uxr_id_rol','rol_nombre');
                 
                 $crud->add_fields('username','email','activated','rol');
                 $crud->unset_delete();
