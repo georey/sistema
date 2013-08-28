@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Supr admin</title>
+    <title>TAMOSA</title>
     <meta name="author" content="SuggeElson" />
     <meta name="description" content="Supr admin template - new premium responsive admin template. This template is designed to help you build the site administration without losing valuable time.Template contains all the important functions which must have one backend system.Build on great twitter boostrap framework" />
     <meta name="keywords" content="admin, admin template, admin theme, responsive, responsive admin, responsive admin template, responsive theme, themeforest, 960 grid system, grid, grid theme, liquid, masonry, jquery, administration, administration template, administration theme, mobile, touch , responsive layout, boostrap, twitter boostrap" />
@@ -26,6 +26,7 @@
     <link href="<?php echo base_url()?>scripts/forms/select/select2.css" type="text/css" rel="stylesheet" />
     <link href="<?php echo base_url()?>scripts/forms/validate/validate.css" type="text/css" rel="stylesheet" />
     <link href="<?php echo base_url()?>scripts/forms/smartWizzard/smart_wizard.css" type="text/css" rel="stylesheet" />
+    <link href="<?php echo base_url()?>scripts/tables/dataTables/jquery.dataTables.css" type="text/css" rel="stylesheet" />
 
     <!-- Main stylesheets -->
     <link href="<?php echo base_url()?>stylesheets/main.css" rel="stylesheet" type="text/css" /> 
@@ -52,56 +53,7 @@
         //adding load class to body and hide page
         document.documentElement.className += 'loadstate';
     </script>
-        <!-- Important plugins put in all pages -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>  
 
-
-       <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/knob/jquery.knob.js"></script><!-- Circular sliders and stats -->
-
-    <!-- Misc scripts -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
-    
-    <!-- Search plugin -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch.js"></script>
-    
-    <!-- Form plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/watermark/jquery.watermark.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/elastic/jquery.elastic.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/inputlimiter/jquery.inputlimiter.1.3.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/maskedinput/jquery.maskedinput-1.3.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/ibutton/jquery.ibutton.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/uniform/jquery.uniform.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/stepper/ui.stepper.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/color-picker/colorpicker.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/timeentry/jquery.timeentry.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/select/select2.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/dualselect/jquery.dualListBox-1.3.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/tiny_mce/jquery.tinymce.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/smartWizzard/jquery.smartWizard-2.0.min.js"></script>
-    
-    <!-- Fix scripts -->
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/ios-fix/ios-orientationchange-fix.js"></script>
-
-    <!-- Important Place before main.js  -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
-
-    <!-- grocery crud scripts  --> 
-    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/flexigrid.js"></script> 
-    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/jquery.form.js"></script>
-
-    <!-- Init plugins -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->
-    <script type="text/javascript" src="<?php echo base_url()?>js/dashboard.js"></script>
-    <script type="text/javascript" src="<?php echo base_url()?>js/forms.js"></script><!-- Init plugins only for page -->
     </head>
 
     <body>
@@ -274,7 +226,20 @@
         <div id="content" class="clearfix">
             <div class="contentwrapper"><!--Content wrapper-->
                 <div class="heading">
-                    <h3><?php print_r(strtoupper($funcion))?></h3>
+                    <h3><?php 
+                    if ($control == 'index'&& $funcion == 'index') {
+                        print_r(strtoupper($modulo));
+                    }
+                    
+                    if ($control != 'index' && $funcion == 'index') {
+                        print_r(strtoupper($control));
+                    }
+                    if ($funcion != 'index') {
+                        print_r(strtoupper($funcion));
+                     } 
+                        
+                    
+                    ?></h3>
                     <ul class="breadcrumb">
                         <li>Ud se encuentra aqui:</li>
                         <li>
@@ -289,14 +254,71 @@
                     </ul>
 
                 </div><!-- End .heading-->
-               
+                <div class="row-fluid">
                     <mp:Content />
-               
+               </div>
             </div><!-- End contentwrapper -->
         </div><!-- End #content -->
     </div><!-- End #wrapper -->
+
+     <!-- Important plugins put in all pages -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/bootstrap/bootstrap.js"></script>  
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/jquery.mousewheel.js"></script>  
+
+
+       <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/charts/knob/jquery.knob.js"></script><!-- Circular sliders and stats -->
+
+    <!-- Misc scripts -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/fullcalendar/fullcalendar.min.js"></script><!-- Calendar plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/qtip/jquery.qtip.min.js"></script><!-- Custom tooltip plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/totop/jquery.ui.totop.min.js"></script> <!-- Back to top plugin -->
+    
+    <!-- Search plugin -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/misc/search/tipuesearch.js"></script>
+    
+    <!-- Form plugins -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/watermark/jquery.watermark.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/elastic/jquery.elastic.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/inputlimiter/jquery.inputlimiter.1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/maskedinput/jquery.maskedinput-1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/ibutton/jquery.ibutton.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/uniform/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/stepper/ui.stepper.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/color-picker/colorpicker.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/timeentry/jquery.timeentry.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/select/select2.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/dualselect/jquery.dualListBox-1.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/tiny_mce/jquery.tinymce.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/forms/smartWizzard/jquery.smartWizard-2.0.min.js"></script>
+    
+    <!-- Fix scripts -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/ios-fix/ios-orientationchange-fix.js"></script>
+
+      <!-- Table plugins -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/tables/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/tables/responsive-tables/responsive-tables.js"></script><!-- Make tables responsive -->
+
+    <!-- Important Place before main.js  -->
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>scripts/fix/touch-punch/jquery.ui.touch-punch.min.js"></script><!-- Unable touch for JQueryUI -->
     
 
+<!-- grocery crud scripts  --> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/flexigrid.js"></script> 
+    <script type="text/javascript" src="<?php echo base_url()?>assets/grocery_crud/themes/satelite/js/jquery.form.js"></script>
+
+   
+    <!-- Init plugins -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/main.js"></script><!-- Core js functions -->
+    <script type="text/javascript" src="<?php echo base_url()?>js/dashboard.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/forms.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>js/datatable.js"></script>
+    <!-- Init plugins only for page -->
 
     
 

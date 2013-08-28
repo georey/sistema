@@ -1,3 +1,5 @@
+
+
 <?php 
  $url1="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 //echo $funcion;
