@@ -129,4 +129,11 @@ class Facturas_model extends CI_Model
 		return $query->row_array();
    }
 
+   public function eliminar_destino($id=0)
+   {
+   		$this->db->where('res_id', $id);
+   		$this->db->delete('res_responsable');
+   		return true;
+   }
+
 }

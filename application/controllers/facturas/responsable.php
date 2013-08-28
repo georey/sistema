@@ -50,6 +50,7 @@ class Responsable extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {			
+			$this->facturas_model->eliminar_destino($id);
 			$this->facturas_model->estado_factura($id ,6);
 			redirect('/facturas/responsable/');
 		}
