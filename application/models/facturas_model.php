@@ -57,12 +57,14 @@ class Facturas_model extends CI_Model
 
 	public function cargar_facturas_estado($est)
 	{
-		$this->db->select('*, (select sum(esf_monto) from esf_estado_factura where esf_id_fac=fac_id) as ingreso')			
+		$this->db->select('*,  salida.tid_nombre as tid_salida, entrada.tid_nombre as tid_entrada')
 			->from('fac_factura')
 			->join('vw_lista','id=fac_id_vista')
 			->join('des_destino','des_id_fac=fac_id','left')
 			->join('asi_asignacion','asi_id=des_id_asi','left')
 			->join('res_responsable','res_id=asi_id_res','left')
+			->join('tid_tipo_documento salida','salida.tid_id=des_id_tid_salida','left')
+			->join('tid_tipo_documento entrada','entrada.tid_id=des_id_tid_entrada','left')
 			->where_in('fac_estado',$est);
 			$query=$this->db->get();
 		return $query->result_array();
@@ -90,7 +92,7 @@ class Facturas_model extends CI_Model
 	}
 
 	public function mod_registro($tabla,$cadena,$campo,$condicion)
-	{		
+	{
 		$this->db->where($campo, $condicion);
         $this->db->update($tabla, $cadena);        
         return 1;
@@ -127,6 +129,15 @@ class Facturas_model extends CI_Model
 			->from($tabla);			
 		$query=$this->db->get();
 		return $query->row_array();
+   }
+
+   public function get_ultimo_registro($tabla,$where)
+   {   		
+		$this->db->select()
+			->where($where)
+			->from($tabla);			
+		$query=$this->db->get();
+		return $query->last_row('array');
    }
 
    public function eliminar_destino($id=0)

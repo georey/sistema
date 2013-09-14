@@ -23,15 +23,18 @@ class Responsable extends CI_Controller
 						'asi_id_usu' => $this->tank_auth->get_user_id());
 					$asi_id = $this->facturas_model->add_registro('asi_asignacion',$asignacion);
 				}
-				else
+				else					
 					$asi_id = $comp['asi_id'];
+
+				//$this->facturas_model->del_registro('des_destino',array('des_id_fac'=>$_POST['fac_id']));
 
 				$responsable = array(
 					'des_id_asi' => $asi_id,
 					'des_id_fac' => $_POST['fac_id'],
-					'des_obs' => $_POST['obs'] );
+					'des_obs' => $_POST['obs'] );				
 				$this->facturas_model->add_registro('des_destino',$responsable);
 				$this->facturas_model->estado_factura($_POST['fac_id'] ,2);
+
 				redirect('/facturas/responsable/');
 			}
 			else
@@ -41,7 +44,7 @@ class Responsable extends CI_Controller
 
 	function cargar_historial()
 	{
-		$data['historial']=$this->facturas_model->historial($_POST['id']);
+		$data['historial']=$this->facturas_model->historial($_POST['id']);		
 		$this->load->view('facturas/responsable/historial',$data);
 	}
 

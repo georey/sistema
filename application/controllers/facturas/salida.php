@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Recepcion extends CI_Controller
+class Salida extends CI_Controller
 {
 	function __construct()
 	{
@@ -13,17 +13,17 @@ class Recepcion extends CI_Controller
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {			
-			$data['facturas']=$this->facturas_model->cargar_facturas_estado(array(3,10));
+			$data['facturas']=$this->facturas_model->cargar_facturas_estado(array(2,3));
 			$data['responsables']=$this->facturas_model->cargar_tabla('res_responsable');
-			$data['tipo_documento']=$this->facturas_model->get_tabla('tid_tipo_documento', array('tid_tipo'=>2));
+			$data['tipo_documento']=$this->facturas_model->get_tabla('tid_tipo_documento', array('tid_tipo'=>1));
 			if($_POST) {				
 				$des=$this->facturas_model->get_ultimo_registro('des_destino',array('des_id_fac' => $_POST['fac_id']));
 				$des_id = $des['des_id'];
 				$destino = array(
-					'des_id_tid_entrada' => $_POST['tipo_salida']);
+					'des_id_tid_salida' => $_POST['tipo_salida']);
 				$this->facturas_model->mod_registro('des_destino',$destino,'des_id',$des_id);
-				$this->facturas_model->estado_factura($_POST['fac_id'] ,10);
-				redirect('/facturas/recepcion/');
+				$this->facturas_model->estado_factura($_POST['fac_id'] ,3);
+				redirect('/facturas/salida/');
 			}
 			else
 			$this->_cargarvista($data);
@@ -32,7 +32,7 @@ class Recepcion extends CI_Controller
 
 	function cargar_historial()
 	{
-		$data['historial']=$this->facturas_model->historial($_POST['id']);
+		$data['historial']=$this->facturas_model->historial($_POST['id']);		
 		$this->load->view('facturas/responsable/historial',$data);
 	}
 
